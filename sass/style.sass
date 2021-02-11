@@ -1,24 +1,37 @@
-$width: 1400px
+$width: 1600px
 $padding: 20px
+$color-blue: #0b0038
+$color-orange: #ce4900
 
 body
 	font-family: 'PT Sans', sans-serif
 
 .container
 	max-width: $width
-	background-color: green
 	margin: 0 auto
 	box-sizing: border-box
 	box-shadow: 0 0 10px rgba(0,0,0,0.5)
 
 .page-header
-	min-height: 75px
-	background-color: #808080
+	min-height: 400px
 	padding-top: $padding
 	display: grid
 	grid-template-columns: 1fr 3fr 1fr
-	// position: sticky
-	// top: 0
+	grid-template-rows: 1fr
+	background-repeat: no-repeat
+	position: relative
+	&::before
+		content: ""
+		background-image: url(../img/background.jpg)
+		background-position: center
+		top: 0
+		left: 0
+		bottom: 0
+		right: 0
+		position: absolute
+		z-index: -1
+		background-size: cover
+		opacity: 0.5
 
 .logo-gatchina
 	& img
@@ -29,10 +42,11 @@ body
 	text-align: center
 	font-size: 24px
 
-.logo-gkh
-	& img
-		display: block
-	margin: 0 auto
+.logo-gkh 
+	border: 1px solid black
+	& svg
+		border: 1px solid black
+
 
 .page-main
 	min-height: 100vh
@@ -66,3 +80,10 @@ body
 	border: 1px solid black
 	width: 100%
 	margin: 10px 0
+
+// Стилизация кнопок и ссылок
+
+.btn
+
+.link
+
