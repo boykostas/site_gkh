@@ -9,30 +9,52 @@ body {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); }
 
 .page-header {
-  min-height: 100px;
-  background-color: purple;
-  padding: 20px; }
+  min-height: 75px;
+  background-color: #808080;
+  padding-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr; }
+
+.logo-gatchina {
+  margin: 0 auto; }
+  .logo-gatchina img {
+    display: block; }
+
+.logo-txt {
+  text-align: center;
+  font-size: 24px; }
+
+.logo-gkh {
+  margin: 0 auto; }
+  .logo-gkh img {
+    display: block; }
 
 .page-main {
   min-height: 100vh;
   background-color: orange;
   display: grid;
-  grid-template-columns: 20% 1fr 20%; }
+  grid-template-columns: 1fr 3fr 1fr; }
 
 .page-nav {
-  padding: 20px; }
+  padding: 20px;
+  border-radius: 15px; }
 
 .page-content {
   background-color: red;
-  padding: 20px; }
+  padding: 20px;
+  border-radius: 15px; }
 
 .page-aside {
-  padding: 20px; }
+  padding: 20px;
+  border-radius: 15px; }
 
 .page-footer {
   background-color: #ccc;
-  min-height: 100px;
-  padding: 20px; }
+  min-height: 50px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
 
 .image {
   display: block;

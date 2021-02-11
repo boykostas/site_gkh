@@ -12,33 +12,54 @@ body
 	box-shadow: 0 0 10px rgba(0,0,0,0.5)
 
 .page-header
-	min-height: 100px
-	background-color: purple
-	padding: $padding
+	min-height: 75px
+	background-color: #808080
+	padding-top: $padding
+	display: grid
+	grid-template-columns: 1fr 3fr 1fr
 	// position: sticky
 	// top: 0
+
+.logo-gatchina
+	& img
+		display: block
+	margin: 0 auto
+
+.logo-txt
+	text-align: center
+	font-size: 24px
+
+.logo-gkh
+	& img
+		display: block
+	margin: 0 auto
 
 .page-main
 	min-height: 100vh
 	background-color: orange
 	display: grid
-	grid-template-columns: 20% 1fr 20%
-	// grid-gap: 10px
+	grid-template-columns: 1fr 3fr 1fr
 
 .page-nav
 	padding: $padding
+	border-radius: 15px
 
 .page-content
 	background-color: red
 	padding: $padding
+	border-radius: 15px
 
 .page-aside
 	padding: $padding
+	border-radius: 15px
 
 .page-footer
 	background-color: #ccc
-	min-height: 100px
+	min-height: 50px
 	padding: $padding
+	display: flex
+	justify-content: center
+	align-items: center
 
 .image
 	display: block
