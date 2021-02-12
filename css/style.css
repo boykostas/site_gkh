@@ -51,6 +51,11 @@ body {
 .page-nav {
   padding: 20px; }
 
+.nav-bar {
+  list-style-type: none; }
+  .nav-bar a {
+    text-decoration: none; }
+
 .page-content {
   background-color: #bbbbbb;
   padding: 20px; }
